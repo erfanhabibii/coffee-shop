@@ -47,4 +47,37 @@
     .overlay--visible{
         @apply visible opacity-100;
     }
+    @media screen and (min-width:768px) {
+        html.dark .Products{
+            background-image: url(../images/products-bg.png);
+        }
+        .Products{
+            background: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)),url(../images/products-bg.png);
+            background-repeat:no-repeat;
+            background-size: 100%;
+        }
+    }    .section-title{
+        @apply text-zinc-700 dark:text-white font-MorabbaMedium text-2xl md:text-5xl/[48px];
+    }
+    .section-subtitle{
+        @apply text-zinc-700 dark:text-white font-MorabbaLight text-lg md:text-3xl/[48px];
+    }
+    .section-link{
+        @apply flex items-center text-orange-300 tracking-tightest md:text-xl/[30px] hover:bg-orange-200/20 py-1.5 pl-0.5 pr-2 rounded-md;
+    }
+    .produnct-box{
+        @apply bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-2 md:p-5;
+    }
+    .offer{
+        @apply relative
+    }
+    .offer::after{
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        inset: 0;
+        margin: auto;
+        background-color: #ef4444;
+    }
 }
