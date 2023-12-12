@@ -32,7 +32,22 @@ module.exports = {
       spacing: {
         "22" : "5.5rem",
         "30" : "7.5rem",
+      },
+      container: {
+        center: true,
+        DEAFULT: "1rem",
+        lg: "0.625rem"
+      },
+      backgroundImage: {
+        "home-desktop": "url(../images/headerBgDesktop.webp)",
+        "home-mobile": "url(../images/headerBgMobile.webp)",
       }
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
     container:{
       "center": true,

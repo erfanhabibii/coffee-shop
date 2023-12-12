@@ -20,26 +20,20 @@
     }
     @font-face {
         font-family: "Morabba Light";
-        src: url("../fonts/Dana/woff2/Morabba-Light.woff2") format("woff2");
+        src: url("../fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
         font-display: swap;
     }
     @font-face {
         font-family: "Morabba Medium";
-        src: url("../fonts/Dana/woff2/Morabba-Medium.woff2") format("woff2");
+        src: url("../fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
         font-display: swap;
     }
     @font-face {
         font-family: "Morabba Bold";
-        src: url("../fonts/Dana/woff2/Morabba-Bold.woff2") format("woff2");
+        src: url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
         font-display: swap;
     }
 }
-
-body{
-    background-image: url(../images/headerBgDesktop.webp);
-    background-repeat: no-repeat;
-}
-
 @layer components{
     .submenu{
         @apply hidden flex-col gap-2 px-10 text-zinc-600 dark:text-white opacity-0 select-none;
