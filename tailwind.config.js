@@ -51,8 +51,11 @@ module.exports = {
     },
     container:{
       "center": true,
-      "padding" : "1.5rem" 
-    }
+      "padding": {
+        DEFAULT: "1rem",
+        lg : "0.625rem",
+      },
+    },
   },
   plugins: [
     function({ addVariant }) {
