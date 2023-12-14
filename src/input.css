@@ -126,4 +126,30 @@
             content: none;
         }
     }
+    .quick-access{
+        @apply relative;
+    }
+    .quick-access::before{
+        position: absolute;
+        content: " ";
+        inset: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: -20px;
+        width: 10px;
+        height: 5px;
+        background-color: currentColor;
+        border-radius: 20px;
+    }
+    @media screen and (min-width:768px) {
+        .quick-access::before{
+            margin-right: -28px;
+            width: 12px;
+            height: 5px;
+        }
+    }
+    .ltr-text{
+        direction: ltr;
+        text-align: left;
+    }
 }
