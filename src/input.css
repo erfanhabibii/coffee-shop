@@ -65,7 +65,7 @@
     .section-link{
         @apply flex items-center text-orange-300 tracking-tightest md:text-xl/[30px] hover:bg-orange-200/20 py-1.5 pl-0.5 pr-2 rounded-md;
     }
-    .produnct-box{
+    .product-box{
         @apply bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-2 md:p-5;
     }
     .offer{
