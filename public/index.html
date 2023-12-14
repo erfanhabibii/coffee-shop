@@ -81,6 +81,9 @@
         <symbol id="curve" width="100" height="22" viewBox="0 0 100 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z"/>
         </symbol>
+        <symbol id="curve-revert" width="100" height="22" viewBox="0 0 100 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 22C31 22 19 -3.26655e-06 1.9233e-06 -3.02023e-06L100 -3.8147e-06C81.25 -5.45387e-06 69 22 50 22Z" fill="#F3F4F6"/>
+        </symbol>
         <symbol id="mini-chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </symbol>
@@ -211,328 +214,333 @@
             </defs>
         </symbol>                               
     </svg>
-    <!-- Navigation Menu -->
-    <header class="hidden md:flex w-[95%] lg:w-[90%] z-50 mx-auto justify-between items-center py-5 px-6 lg:px-10 fixed top-9 right-0 left-0 bg-black/50 rounded-3xl backdrop-blur-[6px]">
-        <!-- Divition Right -->
-        <div class="flex items-center h-14">
-            <!-- Logo -->
-            <div class="ml-4 lg:ml-9">
-                <img src="images/app-logo.png" alt="">                 
-            </div>
-            <!-- Menu -->
-            <ul class="flex gap-5 lg:gap-9 h-full text-xl text-gray-300 tracking-tightest child:leading-[56px]">
-                <li class="font-DanaMedium text-orange-200"><a href="">صفحه اصلی</a></li>
-                <li class="relative group hover:text-orange-300">
-                    <a href="" class="group-hover:text-orange-300 transition-colors">فروشگاه
-                    <!-- Hover Menu -->
-                        <div class="absolute top-full w-52 p-6 pt-2 space-y-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white text-base tracking-normal shadow-normal rounded-2xl border-t-[3px] border-t-orange-300 child:inline-block child:transition-colors child-hover:text-orange-300">
-                            <a href="">قهوه ویژه</a>
-                            <a href="">ویژه در سطح جهانی</a>
-                            <a href="">قهوه درجه یک</a>
-                            <a href="">ترکیبات تجاری</a>
-                            <a href="">کپسول قهوه</a>
-                            <a href="">قهوه زینو برزیلی</a>
-                        </div>
-                    </a>
-                </li>
-                <li class="hover:text-orange-300"><a href="">دیکشنری</a></li>
-                <li class="hover:text-orange-300"><a href="">بلاگ</a></li>
-                <li class="hover:text-orange-300"><a href="">درباره ما</a></li>
-                <li class="hover:text-orange-300"><a href="">تماس با ما</a></li>
-            </ul>
-        </div>
-        <!-- Divition Left -->
-        <div class="flex items-center text-orange-200 text-xl gap-x-3 lg:gap-x5 xl:gap-x-10">
-            <!-- Shoping/Toggle -->
-            <div class="flex items-center">
-                <!-- Shoping Cart -->
-                <div class="relative group">
-                    <!-- Shoping Cart Hover -->
-                    <div class="py-3">
-                        <svg class="w-8 h-8 ml-3 xl:ml-5">
-                            <use href="#shoping-cart"></use>
-                        </svg>
-                    </div>
-                    <!-- Shoping Cart Box -->
-                    <div class="absolute max-h-[760px] top-full left-0 w-[400px] p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-2xl border-t-[3px] border-t-orange-300">
-                        <!-- Cart Header -->
-                        <div class="flex items-center justify-between font-DanaMedium text-xs tracking-tighter">
-                            <span class="text-gray-300">2 مورد</span>
-                            <a href="" class="flex items-center text-orange-300">مشاهده سبد خرید
-                                <svg class="w-5 h-5"><use href="#chevron-left-mini"></use></svg>
-                            </a>
-                        </div>
-                        <!-- Cart Body -->
-                        <div class="pb-1 border-b overflow-y-auto max-h-[600px] border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
-                            <div class="flex gap-x-2.5 pb-6 ">
-                                <img class="w-30 h-30" src="images/products/p1.png" alt="product">
-                                <div class="flex flex-col justify-between">
-                                    <div>
-                                        <h4  class="font-DanaMedium text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی</h4>
-                                    </div>
-                                    <div>
-                                        <span class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">21.000 تومان تخفیف</span>
-                                        <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-xl">175,000 <span class="font-Dana text-sm">تومان</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex gap-x-2.5 pb-6 ">
-                                <img class="w-30 h-30" src="images/products/p2.png" alt="product">
-                                <div class="flex flex-col justify-between">
-                                    <div>
-                                        <h4  class="font-DanaMedium text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                                    </div>
-                                    <div>
-                                        <span class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">14.500 تومان تخفیف</span>
-                                        <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-xl">175,000 <span class="font-Dana text-sm">تومان</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Cart Footer -->
-                        <div class="flex justify-between items-center pt-6">
-                            <div>
-                                <span class="text-gray-300 text-xs">مبلغ قابل پرداخت</span>
-                                <p class="text-xl font-DanaDemiBold text-zinc-700 dark:text-white">350,000 <span class="text-sm font-Dana">تومان</span></p>
-                            </div>
-                            <div>
-                                <div class="text-xl bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl overflow-hidden">
-                                    <a href="" class="inline-block px-6 py-3.5">ثبت سفارش</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Menu -->
+        <div class="hidden md:flex w-[95%] lg:w-[90%] z-50 mx-auto justify-between items-center py-5 px-6 lg:px-10 fixed top-9 right-0 left-0 bg-black/50 rounded-3xl backdrop-blur-[6px]">
+            <!-- Divition Right -->
+            <div class="flex items-center h-14">
+                <!-- Logo -->
+                <div class="ml-4 lg:ml-9">
+                    <img src="images/app-logo.png" alt="">                 
                 </div>
-                <!-- Toggle Light/Dark -->
-                <div class="cursor-pointer toggle-theme">
-                    <svg class="inline-block dark:hidden w-8 h-8">
-                        <use  href="#sun"></use>
-                    </svg>
-                    <svg class="hidden dark:inline-block w-8 h-8">
-                        <use  href="#mon"></use>
-                    </svg>
-                </div>
-            </div>
-            <!-- Divide Border -->
-            <span class="inline-block w-px h-14 bg-white/20 #FFFFFF33 "></span>
-            <!-- Sign in/Sign up -->
-            <div class="flex items-center">
-                <a href="" class="flex items-center gap-x-2.5 tracking-tightest">
-                    <svg class="w-8 h-8 rotate-180">
-                        <use href="#sign"></use>
-                    </svg>
-                    <span class="hidden xl:inline-block">
-                        ورود  |  ثبت‌نام
-                    </span>
-                </a>
-            </div>
-        </div>
-    </header>
-    <!-- Mobile Navigation Menu -->
-    <section class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
-        <!-- Bars Icon -->
-        <div>
-            <svg class="nav-icon h-6 w-6 dark:text-white">
-                <use href="#bars-3"></use>
-            </svg>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="nav fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
-            <!-- Head of menu -->
-            <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
-                <div class="flex items-center gap-x-3.5">
-                    <div>
-                        <svg class="w-10 h-10">
-                            <use href="#logo"></use>
-                        </svg>
-                    </div>
-                    <div>
-                        <svg class="w-24 h-10 text-orange-300">
-                            <use href="#logo-type"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="nav-close-btn">
-                    <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-                        <use href="#x-mark-mini"></use>
-                    </svg>
-                </div>
-            </div>
-            <!-- Body of menu -->
-            <div>
-                <ul class="text-zinc-700 dark:text-white space-y-6">
-                    <li>
-                        <a href="" class="flex items-center gap-2 text-orange-300 bg-orange-200/20 rounded-md py-2 pr-2.5">
-                            <svg class="w-5 h-5">
-                                <use href="#home"></use>
-                            </svg>
-                            صفحه اصلی
-                        </a>
-                    </li>
-                    <li>
-                        <div class="">
-                            <div class="flex items-center justify-between gap-2 px-2.5 transition-all">
-                                <a href="" class="flex items-center gap-2">
-                                    <svg class="w-5 h-5">
-                                        <use href="#shoping-bag"></use>
-                                    </svg>
-                                    فروشگاه
-                                </a>
-                                <svg class="w-4 h-4 submenu-btn">
-                                    <use href="#mini-chevron-down"></use>
-                                </svg>
-                            </div>
-                            <!-- Submenu -->
-                            <div class="submenu">
-                                <a href="" class="pt-2">قهوه ویژه</a>
+                <!-- Menu -->
+                <ul class="flex gap-5 lg:gap-9 h-full text-xl text-gray-300 tracking-tightest child:leading-[56px]">
+                    <li class="font-DanaMedium text-orange-200"><a href="">صفحه اصلی</a></li>
+                    <li class="relative group hover:text-orange-300">
+                        <a href="" class="group-hover:text-orange-300 transition-colors">فروشگاه
+                        <!-- Hover Menu -->
+                            <div class="absolute top-full w-52 p-6 pt-2 space-y-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white text-base tracking-normal shadow-normal rounded-2xl border-t-[3px] border-t-orange-300 child:inline-block child:transition-colors child-hover:text-orange-300">
+                                <a href="">قهوه ویژه</a>
                                 <a href="">ویژه در سطح جهانی</a>
                                 <a href="">قهوه درجه یک</a>
                                 <a href="">ترکیبات تجاری</a>
                                 <a href="">کپسول قهوه</a>
                                 <a href="">قهوه زینو برزیلی</a>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="flex items-center gap-2 px-2.5">
-                            <svg class="w-5 h-5">
-                                <use href="#chat-bubble"></use>
-                            </svg>
-                            دیکشنری
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="flex items-center gap-2 px-2.5">
-                            <svg class="w-5 h-5">
-                                <use href="#briefcase"></use>
-                            </svg>
-                            درباره ما
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="flex items-center gap-2 px-2.5">
-                            <svg class="w-5 h-5">
-                                <use href="#document-text"></use>
-                            </svg>
-                            بلاگ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="flex items-center gap-2 p-2.5">
-                            <svg class="w-5 h-5">
-                                <use href="#phone-arrow"></use>
-                            </svg>
-                            تماس با ما
-                        </a>
-                    </li>
+                    <li class="hover:text-orange-300"><a href="">دیکشنری</a></li>
+                    <li class="hover:text-orange-300"><a href="">بلاگ</a></li>
+                    <li class="hover:text-orange-300"><a href="">درباره ما</a></li>
+                    <li class="hover:text-orange-300"><a href="">تماس با ما</a></li>
                 </ul>
             </div>
-            <!-- Bottom of menu -->
-            <div class="flex flex-col items-start gap-6 py-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10 text-orange-300">
-                <!-- Sign in/ Sign up -->
-                <a href="" class="inline-flex items-center gap-x-2">
-                    <svg class="w-5 h-5 rotate-180">
-                        <use href="#sign"></use>
-                    </svg>
-                    ورود  |  ثبت‌نام
-                </a>
-                <!-- Toggle theme -->
-                <div class="toggle-theme inline-block cursor-pointer">
-                    <div class="flex items-center dark:hidden gap-x-2">
-                        <svg class="w-5 h-5">
+            <!-- Divition Left -->
+            <div class="flex items-center text-orange-200 text-xl gap-x-3 lg:gap-x5 xl:gap-x-10">
+                <!-- Shoping/Toggle -->
+                <div class="flex items-center">
+                    <!-- Shoping Cart -->
+                    <div class="relative group">
+                        <!-- Shoping Cart Hover -->
+                        <div class="py-3">
+                            <svg class="w-8 h-8 ml-3 xl:ml-5">
+                                <use href="#shoping-cart"></use>
+                            </svg>
+                        </div>
+                        <!-- Shoping Cart Box -->
+                        <div class="absolute max-h-[760px] top-full left-0 w-[400px] p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-2xl border-t-[3px] border-t-orange-300">
+                            <!-- Cart Header -->
+                            <div class="flex items-center justify-between font-DanaMedium text-xs tracking-tighter">
+                                <span class="text-gray-300">2 مورد</span>
+                                <a href="" class="flex items-center text-orange-300">مشاهده سبد خرید
+                                    <svg class="w-5 h-5"><use href="#chevron-left-mini"></use></svg>
+                                </a>
+                            </div>
+                            <!-- Cart Body -->
+                            <div class="pb-1 border-b overflow-y-auto max-h-[600px] border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
+                                <div class="flex gap-x-2.5 pb-6 ">
+                                    <img class="w-30 h-30" src="images/products/p1.png" alt="product">
+                                    <div class="flex flex-col justify-between">
+                                        <div>
+                                            <h4  class="font-DanaMedium text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی</h4>
+                                        </div>
+                                        <div>
+                                            <span class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">21.000 تومان تخفیف</span>
+                                            <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-xl">175,000 <span class="font-Dana text-sm">تومان</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-x-2.5 pb-6 ">
+                                    <img class="w-30 h-30" src="images/products/p2.png" alt="product">
+                                    <div class="flex flex-col justify-between">
+                                        <div>
+                                            <h4  class="font-DanaMedium text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                        </div>
+                                        <div>
+                                            <span class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">14.500 تومان تخفیف</span>
+                                            <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-xl">175,000 <span class="font-Dana text-sm">تومان</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart Footer -->
+                            <div class="flex justify-between items-center pt-6">
+                                <div>
+                                    <span class="text-gray-300 text-xs">مبلغ قابل پرداخت</span>
+                                    <p class="text-xl font-DanaDemiBold text-zinc-700 dark:text-white">350,000 <span class="text-sm font-Dana">تومان</span></p>
+                                </div>
+                                <div>
+                                    <div class="text-xl bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl overflow-hidden">
+                                        <a href="" class="inline-block px-6 py-3.5">ثبت سفارش</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Toggle Light/Dark -->
+                    <div class="cursor-pointer toggle-theme">
+                        <svg class="inline-block dark:hidden w-8 h-8">
                             <use  href="#sun"></use>
                         </svg>
-                        <span>تم روشن</span>
-                    </div>
-                    <div class="hidden dark:flex items-center gap-x-2">
-                        <svg class="w-5 h-5">
+                        <svg class="hidden dark:inline-block w-8 h-8">
                             <use  href="#mon"></use>
                         </svg>
-                        <span>تم تیره</span>
                     </div>
                 </div>
-                <!-- Shoping Cart -->
-                <a href="" class="inline-flex items-center gap-x-2">
-                    <svg class="w-5 h-5">
-                        <use href="#shoping-cart"></use>
-                    </svg>
-                    سبد خرید
-                </a>
-            </div>  
-        </div>
-        <!-- Logo-type Icon -->
-        <div>
-            <svg class="w-24 h-10 text-orange-300">
-                <use href="#logo-type"></use>
-            </svg>
-        </div>
-        <!-- Shoping Icon -->
-        <div >
-            <svg class="shoping-cart h-6 w-6 dark:text-white">
-                <use href="#shoping-cart"></use>
-            </svg>
-        </div>
-        <!-- Shoping Menu -->
-        <div class="shoping fixed flex flex-col top-0 bottom-0 -left-64 w-64 pt-5 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
-            <!-- Head of menu -->
-            <div class="flex items-center justify-between pb-6 mb-6 border-b border-b-gray-300 dark:border-b-white/10">
-                <div class="shoping-close-btn">
-                    <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-                        <use href="#x-mark-mini"></use>
-                    </svg>
-                </div>
-                <span class="text-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
-            </div>
-            <!-- Body of menu -->
-            <div class="pb-1 max-h-[600px] overflow-y-auto border-b border-b-gray-100 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
-                <div class="flex gap-x-1 pb-6 ">
-                    <img class="w-22 h-22" src="images/products/p1.png" alt="product">
-                    <div class="flex flex-col justify-between">
-                        <div>
-                            <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی</h4>
-                        </div>
-                        <div>
-                            <span class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter">21.000 تومان تخفیف</span>
-                            <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-base">175,000 <span class="font-Dana text-xs">تومان</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-x-1 pb-6 ">
-                    <img class="w-22 h-22" src="images/products/p2.png" alt="product">
-                    <div class="flex flex-col justify-between">
-                        <div>
-                            <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                        </div>
-                        <div>
-                            <span class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter">14.500 تومان تخفیف</span>
-                            <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-base">175,000 <span class="font-Dana text-xs">تومان</span></p>
-                        </div>
-                    </div>
+                <!-- Divide Border -->
+                <span class="inline-block w-px h-14 bg-white/20 #FFFFFF33 "></span>
+                <!-- Sign in/Sign up -->
+                <div class="flex items-center">
+                    <a href="" class="flex items-center gap-x-2.5 tracking-tightest">
+                        <svg class="w-8 h-8 rotate-180">
+                            <use href="#sign"></use>
+                        </svg>
+                        <span class="hidden xl:inline-block">
+                            ورود  |  ثبت‌نام
+                        </span>
+                    </a>
                 </div>
             </div>
-            <!-- Bottom of menu -->
-            <div class="flex mt-auto flex-col gap-6 py-8 text-orange-300">
-                <div class="flex flex-row-reverse justify-between items-center">
-                    <div>
-                        <span class="text-gray-300 text-xs tracking-tighter">مبلغ قابل پرداخت</span>
-                        <p class="text-base font-DanaDemiBold text-zinc-700 dark:text-white">350,000 <span class="text-xs font-Dana">تومان</span></p>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <section>
+            <div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
+                <!-- Bars Icon -->
+            <div>
+                <svg class="nav-icon h-6 w-6 dark:text-white">
+                    <use href="#bars-3"></use>
+                </svg>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="nav fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
+                <!-- Head of menu -->
+                <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
+                    <div class="flex items-center gap-x-3.5">
+                        <div>
+                            <svg class="w-10 h-10">
+                                <use href="#logo"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <svg class="w-24 h-10 text-orange-300">
+                                <use href="#logo-type"></use>
+                            </svg>
+                        </div>
                     </div>
-                    <div>
-                        <div class="text-base bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl overflow-hidden">
-                            <a href="" class="inline-block px-5 py-2.5">ثبت سفارش</a>
+                    <div class="nav-close-btn">
+                        <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+                            <use href="#x-mark-mini"></use>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Body of menu -->
+                <div>
+                    <ul class="text-zinc-700 dark:text-white space-y-6">
+                        <li>
+                            <a href="" class="flex items-center gap-2 text-orange-300 bg-orange-200/20 rounded-md py-2 pr-2.5">
+                                <svg class="w-5 h-5">
+                                    <use href="#home"></use>
+                                </svg>
+                                صفحه اصلی
+                            </a>
+                        </li>
+                        <li>
+                            <div class="">
+                                <div class="flex items-center justify-between gap-2 px-2.5 transition-all">
+                                    <a href="" class="flex items-center gap-2">
+                                        <svg class="w-5 h-5">
+                                            <use href="#shoping-bag"></use>
+                                        </svg>
+                                        فروشگاه
+                                    </a>
+                                    <svg class="w-4 h-4 submenu-btn">
+                                        <use href="#mini-chevron-down"></use>
+                                    </svg>
+                                </div>
+                                <!-- Submenu -->
+                                <div class="submenu">
+                                    <a href="" class="pt-2">قهوه ویژه</a>
+                                    <a href="">ویژه در سطح جهانی</a>
+                                    <a href="">قهوه درجه یک</a>
+                                    <a href="">ترکیبات تجاری</a>
+                                    <a href="">کپسول قهوه</a>
+                                    <a href="">قهوه زینو برزیلی</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="flex items-center gap-2 px-2.5">
+                                <svg class="w-5 h-5">
+                                    <use href="#chat-bubble"></use>
+                                </svg>
+                                دیکشنری
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="flex items-center gap-2 px-2.5">
+                                <svg class="w-5 h-5">
+                                    <use href="#briefcase"></use>
+                                </svg>
+                                درباره ما
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="flex items-center gap-2 px-2.5">
+                                <svg class="w-5 h-5">
+                                    <use href="#document-text"></use>
+                                </svg>
+                                بلاگ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="flex items-center gap-2 p-2.5">
+                                <svg class="w-5 h-5">
+                                    <use href="#phone-arrow"></use>
+                                </svg>
+                                تماس با ما
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Bottom of menu -->
+                <div class="flex flex-col items-start gap-6 py-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10 text-orange-300">
+                    <!-- Sign in/ Sign up -->
+                    <a href="" class="inline-flex items-center gap-x-2">
+                        <svg class="w-5 h-5 rotate-180">
+                            <use href="#sign"></use>
+                        </svg>
+                        ورود  |  ثبت‌نام
+                    </a>
+                    <!-- Toggle theme -->
+                    <div class="toggle-theme inline-block cursor-pointer">
+                        <div class="flex items-center dark:hidden gap-x-2">
+                            <svg class="w-5 h-5">
+                                <use  href="#sun"></use>
+                            </svg>
+                            <span>تم روشن</span>
+                        </div>
+                        <div class="hidden dark:flex items-center gap-x-2">
+                            <svg class="w-5 h-5">
+                                <use  href="#mon"></use>
+                            </svg>
+                            <span>تم تیره</span>
+                        </div>
+                    </div>
+                    <!-- Shoping Cart -->
+                    <a href="" class="inline-flex items-center gap-x-2">
+                        <svg class="w-5 h-5">
+                            <use href="#shoping-cart"></use>
+                        </svg>
+                        سبد خرید
+                    </a>
+                </div>  
+            </div>
+            <!-- Logo-type Icon -->
+            <div>
+                <svg class="w-24 h-10 text-orange-300">
+                    <use href="#logo-type"></use>
+                </svg>
+            </div>
+            <!-- Shoping Icon -->
+            <div >
+                <svg class="shoping-cart h-6 w-6 dark:text-white">
+                    <use href="#shoping-cart"></use>
+                </svg>
+            </div>
+            <!-- Shoping Menu -->
+            <div class="shoping fixed flex flex-col top-0 bottom-0 -left-64 w-64 pt-5 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
+                <!-- Head of menu -->
+                <div class="flex items-center justify-between pb-6 mb-6 border-b border-b-gray-300 dark:border-b-white/10">
+                    <div class="shoping-close-btn">
+                        <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+                            <use href="#x-mark-mini"></use>
+                        </svg>
+                    </div>
+                    <span class="text-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
+                </div>
+                <!-- Body of menu -->
+                <div class="pb-1 max-h-[600px] overflow-y-auto border-b border-b-gray-100 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
+                    <div class="flex gap-x-1 pb-6 ">
+                        <img class="w-22 h-22" src="images/products/p1.png" alt="product">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی</h4>
+                            </div>
+                            <div>
+                                <span class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter">21.000 تومان تخفیف</span>
+                                <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-base">175,000 <span class="font-Dana text-xs">تومان</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-1 pb-6 ">
+                        <img class="w-22 h-22" src="images/products/p2.png" alt="product">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white cursor-pointer line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            </div>
+                            <div>
+                                <span class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter">14.500 تومان تخفیف</span>
+                                <p class="text-zinc-700 dark:text-white font-DanaDemiBold text-base">175,000 <span class="font-Dana text-xs">تومان</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Bottom of menu -->
+                <div class="flex mt-auto flex-col gap-6 py-8 text-orange-300">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <div>
+                            <span class="text-gray-300 text-xs tracking-tighter">مبلغ قابل پرداخت</span>
+                            <p class="text-base font-DanaDemiBold text-zinc-700 dark:text-white">350,000 <span class="text-xs font-Dana">تومان</span></p>
+                        </div>
+                        <div>
+                            <div class="text-base bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl overflow-hidden">
+                                <a href="" class="inline-block px-5 py-2.5">ثبت سفارش</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
-        </div>
-    </section>
-
+            </div>
+        </section>
+    </header>
     <!-- Main -->
     <main>
         <!-- Home -->
-        <section class="relative bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
-            <!-- Text/Circle -->
+        <section>
+            <div class="relative bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+                <!-- Text/Circle -->
             <div class="container relative overflow-y-hidden flex flex-col items-end text-white pt-7 md:pt-80 aspect-[2/1.1] md:aspect-auto h-auto md:h-[720px] lg:h-[900px]">
                 <!-- Text -->
                 <div>
@@ -558,6 +566,7 @@
                 <svg class="w-5 h-5 text-zinc-700 dark:text-white">
                     <use href="#mini-chevron-down"></use>
                 </svg>
+            </div>
             </div>
         </section>
         <!-- Products -->
@@ -1068,9 +1077,9 @@
             </div>
         </section>
         <!-- Category banner -->
-        <section class="my-8 md:my-10 lg:my-20">
+        <section>
             <div class="container">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-white">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-white my-8 md:my-10 lg:my-20">
                     <a href="" class="category-img1 flex flex-col justify-center pr-7 md:pt-12 rounded-2xl h-[142px] md:h-[248px]">
                         <h5 class="font-DanaDemiBold text-2xl/6 md:text-4xl/6 md:mb-7">انواع قهوه</h5>
                         <p class="md:font-DanaMedium md:text-xl/6">ترکیبی و تک خاستگاه</p>
@@ -1511,6 +1520,7 @@
         <section>
             <div class="container">
                 <div class="flex items-center xl:justify-normal xl:flex-nowrap md:justify-center flex-wrap gap-y-6 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-6 xl:h-36 rounded-2xl my-8 md:my-20 px-3 md:px-20 lg:px-44 xl:px-11">
+                    <!-- Head of Coffee club -->
                     <div class="flex items-center md:shrink-0 gap-x-3 md:gap-x-6">
                         <img src="images/club/diamond.png" alt="" class="w-[87px] md:w-[110px]">
                         <div>
@@ -1518,6 +1528,7 @@
                             <p class="font-MorabbaLight text-lg md:text-2xl">میدونستی میتونی با امتیاز هات قهوه بگیری ؟</p>
                         </div>
                     </div>
+                    <!-- body of Coffee club -->
                     <div class="flex justify-around xl:justify-between xl:mr-24 items-center w-full">
                         <div class="flex gap-x-2 md:gap-x-5">
                             <div class="w-[70px] h-[70px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
@@ -1765,6 +1776,10 @@
             </div>
         </section>
     </main>
+    <!-- Footer -->
+    <footer>
+        <div></div>
+    </footer>
     <!-- Overlay for mobile menu/shoping -->
     <div class="overlay"></div>
     <script src="scripts/app.js"></script>

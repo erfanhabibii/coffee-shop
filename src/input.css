@@ -34,6 +34,7 @@
         font-display: swap;
     }
 }
+
 @layer components{
     .submenu{
         @apply hidden flex-col gap-2 px-10 text-zinc-600 dark:text-white opacity-0 select-none;
@@ -56,7 +57,8 @@
             background-repeat:no-repeat;
             background-size: 100%;
         }
-    }    .section-title{
+    }
+    .section-title{
         @apply text-zinc-700 dark:text-white font-MorabbaMedium text-2xl md:text-5xl/[48px];
     }
     .section-subtitle{
