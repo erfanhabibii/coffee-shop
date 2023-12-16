@@ -1281,10 +1281,6 @@ html.dark .services::after,
   max-height: 760px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-1 {
   width: 0.25rem;
 }
@@ -1663,6 +1659,10 @@ html.dark .services::after,
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -2925,6 +2925,10 @@ html.dark .services::after,
 
   .lg\:h-\[900px\] {
     height: 900px;
+  }
+
+  .lg\:h-\[890px\] {
+    height: 890px;
   }
 
   .lg\:w-8 {
