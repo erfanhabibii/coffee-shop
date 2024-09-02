@@ -2,12 +2,11 @@
 Example of coffeeShop template implementation with <img src="https://img.shields.io/badge/HTML-red?style=flat" />, <img src="https://img.shields.io/badge/TAILWINDCSS-blue?style=flat" />, <img src="https://img.shields.io/badge/JAVASCRIPT-yellow?style=flat" />
 
 <br/>
-<!--
+
 ## Demo
-[https://erfanhabibii.github.io/personalwebsite](https://erfanhabibii.github.io/personalWebsite/)
+[https://coffee-shopp.liara.run/](https://coffee-shopp.liara.run/)
 
 <br/>
--->
 
 ## Implemented
 Mobile first
