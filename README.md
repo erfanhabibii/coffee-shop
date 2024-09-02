@@ -4,7 +4,7 @@ Example of coffeeShop template implementation with <img src="https://img.shields
 <br/>
 
 ## Demo
-[https://coffee-shopp.liara.run/](https://coffee-shopp.liara.run/)
+[https://erfanhabibii.github.io/coffee-shop/](https://erfanhabibii.github.io/coffee-shop/)
 
 <br/>
 
